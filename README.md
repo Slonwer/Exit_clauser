@@ -1,24 +1,5 @@
 # SPED-Gen
-[![npm version](https://img.shields.io/npm/v/sped-gen.svg)](https://www.npmjs.com/package/sped-gen)
-[![Build Status](https://travis-ci.org/elvisgs/sped-gen.svg?branch=master)](https://travis-ci.org/elvisgs/sped-gen)
-[![Codecov](https://img.shields.io/codecov/c/github/elvisgs/sped-gen.svg)](https://codecov.io/gh/elvisgs/sped-gen)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
-> Gerador de código baseado em metadados do SPED - Sistema Público de Escrituração Digital.
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Conteúdo**
-
-- [Instalação](#instala%C3%A7%C3%A3o)
-- [Uso](#uso)
-  - [Opções](#op%C3%A7%C3%B5es)
-- [Formato dos metadados](#formato-dos-metadados)
-  - [Campos adicionais incluídos por padrão nos metadados](#campos-adicionais-inclu%C3%ADdos-por-padr%C3%A3o-nos-metadados)
-- [Funções e constantes utilitárias](#fun%C3%A7%C3%B5es-e-constantes-utilit%C3%A1rias)
-  - [No módulo](#no-m%C3%B3dulo)
-  - [Nos templates (helpers do handlebars)](#nos-templates-helpers-do-handlebars)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Instalação
 ```shell
@@ -109,14 +90,5 @@ spedGen.DEFAULT_OPTIONS // pode ser usada para sobrescrever as opções default
 spedGen.registerHelper // registra um helper do handlebars
 ```
 
-### Nos templates (helpers do handlebars)
-- **camelize**(*String*): Converte a string para camel case. Por ex.: field_name -> fieldName
-- **getter**(*String*): Obtém java getter. Por ex.: field_name -> getFieldName
-- **setter**(*String*): Obtém java setter. Por ex.: field_name -> setFieldName
-- **getJavaType**(*Object*): Obtém um java type a partir de um metadado de campo do SPED
-- **getBloco**(*String*): Obtém o bloco (primeiro caracter do id do registro)
-- **pascalCase**(*String*): Converte a string para pascal case. Por ex.: field_name -> FieldName
-- **lcase**(*String*): Converte a string para lowercase
-- **ucase**(*String*): Converte a string para uppercase
 
 A utilização de alguns desses helpers pode ser vista nos exemplos.
