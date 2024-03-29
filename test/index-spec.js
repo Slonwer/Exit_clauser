@@ -303,3 +303,59 @@ describe('Sped Gen', function () {
     });
   });
 });
+// Importação de Módulos:
+
+// rewire: Módulo para modificar variáveis internas de outros módulos durante os testes.
+const rewire = require('rewire');
+
+// sinon: Biblioteca para criação de spies, stubs e mocks em testes.
+const sinon = require('sinon');
+
+// should: Framework de assertion para testes.
+const should = require('should');
+
+// fs: Módulo para lidar com operações de arquivo.
+const fs = require('fs');
+
+// rmrf: Módulo para remover diretórios recursivamente.
+const rmrf = require('rimraf');
+
+// should-sinon: Extensão para should que adiciona assertions específicas para Sinon.js.
+require('should-sinon');
+
+// mocha-sinon: Extensão do Mocha para integração com Sinon.js.
+require('mocha-sinon')();
+
+// Descrição dos Testes:
+
+// O código descreve uma suíte de testes para o módulo spedGen usando o Mocha.
+// Cada teste verifica um aspecto específico do comportamento do spedGen.
+
+// Testes de Exportação de Funções e Constantes:
+
+// Os testes verificam se o módulo spedGen exporta corretamente as funções, constantes e objetos esperados.
+
+// Testes de Opções Padrão:
+
+// Verifica se as opções padrão do módulo estão corretamente definidas e funcionando como esperado.
+
+// Testes da Função Principal:
+
+// A suíte de testes para a função principal spedGen.
+// Cada teste verifica um cenário diferente da execução da função principal.
+
+// Configuração dos Testes:
+
+// Utiliza os hooks beforeEach e afterEach para configurar o ambiente de teste antes e depois de cada teste, respectivamente.
+// No beforeEach, define-se um objeto noop_opts que contém opções padrão para os testes.
+// Utiliza rmrf.sync para remover o diretório de testes antes de cada teste.
+
+// Execução dos Testes:
+
+// Cada teste chama a função spedGen com diferentes opções e verifica se o comportamento está de acordo com o esperado.
+// Utiliza asserts should e Sinon.js para verificar os resultados e comportamentos esperados.
+
+// Testes de Comportamento:
+
+// Os testes cobrem diferentes aspectos do comportamento do spedGen, incluindo manipulação de opções, compilação de template, execução de funções auxiliares, geração de arquivos, entre outros.
+// No geral, esses testes garantem que o módulo spedGen funcione conforme o esperado em diferentes cenários e que qualquer alteração futura no código não quebre o comportamento existente.
