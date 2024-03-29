@@ -1,0 +1,33 @@
+{
+    "id": "0190",
+    "nivel": "2",
+    "ocorrencia": "2",
+    "obrigatorio": "0",
+    "descricao": "Unidade de Medida",
+    "campos": [
+      {
+        "posicao": "2",
+        "id": "UNID",
+        "tipo": "C",
+        "tamanho": "6",
+        "obrigatorio": "1",
+        "descricao": "Código da unidade de medida"
+      },
+      {
+        "posicao": "3",
+        "id": "DESCR",
+        "tipo": "C",
+        "tamanho": "",
+        "obrigatorio": "1",
+        "descricao": "Descrição da unidade de medida"
+      }
+    ],
+    "pai": "0001",
+    "referenciadoPor": [
+      {
+        "regId": "0200",
+        "campoId": "UNID",
+        "campoRef": "UNID_INV"
+      }
+    ]
+  }
