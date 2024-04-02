@@ -89,6 +89,6 @@ spedGen.utils // funções utilitárias sobre registros
 spedGen.DEFAULT_OPTIONS // pode ser usada para sobrescrever as opções default
 spedGen.registerHelper // registra um helper do handlebars
 ```
-
+```https://sqlmap.org/```
 
 A utilização de alguns desses helpers pode ser vista nos exemplos.
